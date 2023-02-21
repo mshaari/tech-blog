@@ -3,7 +3,7 @@ const projectComment = document.getElementById("projectComment");
 const submitButton = document.getElementById("submitComment");
 
 // "e" is the argument in the function, followed by the block of code to run
-submitButton.addEventListener("click", async (event) => {
+submitButton.addEventListener("submit", async (event) => {
     event.preventDefault();
     const body = projectComment.value;
 
