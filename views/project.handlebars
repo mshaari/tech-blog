@@ -8,7 +8,7 @@
       <h2>Leave a comment!</h2>
       <textarea type="text" id="projectComment"></textarea>
       <button id="submitComment">Submit</button>
-      {{#if comments.length}}
+      {{!-- {{#if comments.length}} --}}
       <div>
         <h3>Comments:</h3>
         {{#each comments as |comment|}}
@@ -17,11 +17,11 @@
         </div>
         {{/each}}
       </div>
-      {{/if}}
+      {{!-- {{/if}} --}}
     </form>
   {{/if}}
 </div>
 
 {{#if logged_in}}
-<script src="./js/comment.js"></script>
+<script src="/js/comment.js"></script>
 {{/if}}
